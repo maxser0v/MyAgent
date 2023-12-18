@@ -72,7 +72,7 @@ def search_property(request):
     type_list = list(
         set(Property.objects.values_list("property_accommodation_type", flat=True))
     )
-    get_category(type_list)
+    # get_category(type_list)
     objects = Property.objects.all()
 
     if keyword:
